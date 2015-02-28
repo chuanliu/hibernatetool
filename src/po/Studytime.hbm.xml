@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-2-28 15:00:12 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="po.Studytime" table="STUDYTIME" schema="SJZ_ONLINETRAINING">
+        <comment>&#209;&#167;&#202;&#177;&#195;&#247;&#207;&#184;&#177;&#237;</comment>
+        <id name="dataId" type="big_decimal">
+            <column name="DATA_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="ayId" type="big_decimal">
+            <column name="AY_ID" precision="22" scale="0">
+                <comment>&#176;&#178;&#212;&#203;id</comment>
+            </column>
+        </property>
+        <property name="tfcId" type="string">
+            <column name="TFC_ID" length="510">
+                <comment>tfc_id</comment>
+            </column>
+        </property>
+        <property name="coachId" type="string">
+            <column name="COACH_ID" length="510">
+                <comment>&#189;&#204;&#193;&#183;id</comment>
+            </column>
+        </property>
+        <property name="stdtId" type="string">
+            <column name="STDT_ID" length="510">
+                <comment>&#209;&#167;&#212;&#177;id</comment>
+            </column>
+        </property>
+        <property name="carId" type="string">
+            <column name="CAR_ID" length="510">
+                <comment>&#179;&#181;&#193;&#190;id</comment>
+            </column>
+        </property>
+        <property name="fieldId" type="string">
+            <column name="FIELD_ID" length="510">
+                <comment>&#179;&#161;&#181;&#216;id</comment>
+            </column>
+        </property>
+        <property name="coachIcno" type="string">
+            <column name="COACH_ICNO" length="510">
+                <comment>&#189;&#204;&#193;&#183;ic&#191;&#168;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="stdtIcno" type="string">
+            <column name="STDT_ICNO" length="510">
+                <comment>&#209;&#167;&#212;&#177;ic&#191;&#168;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="carPzh" type="string">
+            <column name="CAR_PZH" length="30">
+                <comment>&#179;&#181;&#193;&#190;&#197;&#198;&#213;&#213;</comment>
+            </column>
+        </property>
+        <property name="fieldCode" type="string">
+            <column name="FIELD_CODE" length="60">
+                <comment>&#179;&#161;&#181;&#216;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="begDay" type="big_decimal">
+            <column name="BEG_DAY" precision="22" scale="0">
+                <comment>&#199;&#169;&#181;&#189;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="begMinute" type="big_decimal">
+            <column name="BEG_MINUTE" precision="22" scale="0">
+                <comment>&#199;&#169;&#181;&#189;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="begTime" type="big_decimal">
+            <column name="BEG_TIME" precision="22" scale="0">
+                <comment>&#191;&#170;&#202;&#188;&#202;&#177;&#188;&#228;[&#200;&#213;&#198;&#218;&#192;&#224;&#208;&#205;]</comment>
+            </column>
+        </property>
+        <property name="endTime" type="big_decimal">
+            <column name="END_TIME" precision="22" scale="0">
+                <comment>&#189;&#225;&#202;&#248;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="ph" type="string">
+            <column name="PH" length="30">
+                <comment>&#197;&#224;&#209;&#181;&#189;&#215;&#182;&#206;</comment>
+            </column>
+        </property>
+        <property name="km" type="string">
+            <column name="KM" length="30">
+                <comment>&#197;&#224;&#209;&#181;&#191;&#198;&#196;&#191;</comment>
+            </column>
+        </property>
+        <property name="timeType" type="string">
+            <column name="TIME_TYPE" length="30">
+                <comment>&#209;&#167;&#202;&#177;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="isSim" type="string">
+            <column name="IS_SIM" length="30">
+                <comment>&#202;&#199;&#183;&#241;&#196;&#163;&#196;&#226;</comment>
+            </column>
+        </property>
+        <property name="trMinute" type="big_decimal">
+            <column name="TR_MINUTE" precision="22" scale="0">
+                <comment>&#197;&#224;&#209;&#181;&#209;&#167;&#202;&#177;</comment>
+            </column>
+        </property>
+        <property name="drMinute" type="big_decimal">
+            <column name="DR_MINUTE" precision="22" scale="0">
+                <comment>&#188;&#221;&#202;&#187;&#209;&#167;&#202;&#177;</comment>
+            </column>
+        </property>
+        <property name="maxSpeed" type="big_decimal">
+            <column name="MAX_SPEED" precision="22" scale="0">
+                <comment>&#215;&#238;&#184;&#223;&#179;&#181;&#203;&#217;</comment>
+            </column>
+        </property>
+        <property name="runMile" type="big_decimal">
+            <column name="RUN_MILE" precision="22" scale="0">
+                <comment>&#208;&#208;&#202;&#187;&#192;&#239;&#179;&#204;</comment>
+            </column>
+        </property>
+        <property name="confirmType" type="big_decimal">
+            <column name="CONFIRM_TYPE" precision="22" scale="0">
+                <comment>&#200;&#183;&#200;&#207;&#183;&#189;&#202;&#189;</comment>
+            </column>
+        </property>
+        <property name="educationCode" type="string">
+            <column name="EDUCATION_CODE" length="60">
+                <comment>&#180;&#243;&#184;&#217;&#207;&#238;&#196;&#191;&#180;&#250;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="xgCard" type="string">
+            <column name="XG_CARD" length="60">
+                <comment>xg&#186;&#197;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="dataVer" type="string">
+            <column name="DATA_VER" length="30">
+                <comment>&#202;&#253;&#190;&#221;&#176;&#230;&#177;&#190;</comment>
+            </column>
+        </property>
+        <property name="dataFrom" type="string">
+            <column name="DATA_FROM" length="60">
+                <comment>&#202;&#253;&#190;&#221;&#192;&#180;&#212;&#180;</comment>
+            </column>
+        </property>
+        <property name="dataFromInfo" type="string">
+            <column name="DATA_FROM_INFO" length="510">
+                <comment>ic&#192;&#169;&#213;&#185;&#208;&#197;&#207;&#162;</comment>
+            </column>
+        </property>
+        <property name="collectDate" type="big_decimal">
+            <column name="COLLECT_DATE" precision="22" scale="0">
+                <comment>&#178;&#201;&#188;&#175;&#202;&#177;&#188;&#228;[&#200;&#213;&#198;&#218;&#192;&#224;&#208;&#205;]</comment>
+            </column>
+        </property>
+        <property name="dataCk1" type="string">
+            <column name="DATA_CK1" length="240">
+                <comment>data_ck1</comment>
+            </column>
+        </property>
+        <property name="dataCk2" type="string">
+            <column name="DATA_CK2" length="240">
+                <comment>data_ck2</comment>
+            </column>
+        </property>
+        <property name="dogNo" type="string">
+            <column name="DOG_NO" length="30">
+                <comment>&#188;&#211;&#195;&#220;&#203;&#248;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="audPass" type="string">
+            <column name="AUD_PASS" length="30">
+                <comment>&#201;&#243;&#186;&#203;&#189;&#225;&#194;&#219;</comment>
+            </column>
+        </property>
+        <property name="audRemark" type="string">
+            <column name="AUD_REMARK" length="480">
+                <comment>&#201;&#243;&#186;&#203;&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="hadModify" type="string">
+            <column name="HAD_MODIFY" length="30">
+                <comment>&#209;&#167;&#202;&#177;&#208;&#222;&#184;&#196;</comment>
+            </column>
+        </property>
+        <property name="cyzgCartype" type="string">
+            <column name="CYZG_CARTYPE" length="30">
+                <comment>cyzg_cartype</comment>
+            </column>
+        </property>
+        <property name="deviceId" type="string">
+            <column name="DEVICE_ID" length="60">
+                <comment>&#201;&#232;&#177;&#184;id</comment>
+            </column>
+        </property>
+        <property name="hddatackver" type="big_decimal">
+            <column name="HDDATACKVER" precision="22" scale="0">
+                <comment>hddatackver</comment>
+            </column>
+        </property>
+        <property name="isOk" type="big_decimal">
+            <column name="IS_OK" precision="22" scale="0">
+                <comment>is_ok</comment>
+            </column>
+        </property>
+        <property name="signCode" type="string">
+            <column name="SIGN_CODE" length="30">
+                <comment>sign_code</comment>
+            </column>
+        </property>
+        <property name="snsMinute" type="big_decimal">
+            <column name="SNS_MINUTE" precision="22" scale="0">
+                <comment>sns_minute</comment>
+            </column>
+        </property>
+        <property name="audModBeg" type="big_decimal">
+            <column name="AUD_MOD_BEG" precision="22" scale="0">
+                <comment>&#212;&#221;&#202;&#177;&#178;&#187;&#202;&#185;&#211;&#195;[&#200;&#213;&#198;&#218;&#192;&#224;&#208;&#205;]</comment>
+            </column>
+        </property>
+        <property name="audModEnd" type="big_decimal">
+            <column name="AUD_MOD_END" precision="22" scale="0">
+                <comment>&#212;&#221;&#202;&#177;&#178;&#187;&#202;&#185;&#211;&#195;[&#200;&#213;&#198;&#218;&#192;&#224;&#208;&#205;]</comment>
+            </column>
+        </property>
+        <property name="roomId" type="big_decimal">
+            <column name="ROOM_ID" precision="22" scale="0">
+                <comment>&#183;&#191;&#188;&#228;&#186;&#197;[openmeeting&#202;&#185;&#211;&#195;]</comment>
+            </column>
+        </property>
+        <property name="roomType" type="string">
+            <column name="ROOM_TYPE" length="40">
+                <comment>&#183;&#191;&#188;&#228;&#192;&#224;&#208;&#205;[openmeeting&#202;&#185;&#211;&#195;]</comment>
+            </column>
+        </property>
+        <property name="state" type="big_decimal">
+            <column name="STATE" precision="22" scale="0" not-null="true">
+                <comment>&#209;&#167;&#202;&#177;&#215;&#180;&#204;&#172;[1&#211;&#208;&#208;&#167;,0&#206;&#222;&#208;&#167;]</comment>
+            </column>
+        </property>
+        <property name="FId" type="big_decimal">
+            <column name="F_ID" precision="22" scale="0">
+                <comment>
+                &#202;&#211;&#198;&#181;id[&#209;&#167;&#202;&#177;&#202;&#199;&#202;&#211;&#198;&#181;&#192;&#224;&#208;&#205;&#181;&#196;&#202;&#177;&#186;&#242;&#202;&#185;&#211;&#195;]</comment>
+            </column>
+        </property>
+        <property name="ip" type="string">
+            <column name="IP" length="200">
+                <comment>ip&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="saveCount" type="big_decimal">
+            <column name="SAVE_COUNT" precision="22" scale="0">
+                <comment>&#202;&#253;&#190;&#221;&#183;&#162;&#203;&#205;&#180;&#206;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="saveFlag" type="string">
+            <column name="SAVE_FLAG" length="60">
+                <comment>&#202;&#253;&#190;&#221;&#183;&#162;&#203;&#205;&#177;&#234;&#202;&#182;</comment>
+            </column>
+        </property>
+        <property name="sessionId" type="string">
+            <column name="SESSION_ID" length="120">
+                <comment>session_id</comment>
+            </column>
+        </property>
+        <property name="userId" type="big_decimal">
+            <column name="USER_ID" precision="22" scale="0">
+                <comment>&#211;&#195;&#187;&#167;id</comment>
+            </column>
+        </property>
+        <property name="zid" type="big_decimal">
+            <column name="ZID" precision="22" scale="0">
+                <comment>&#181;&#216;&#199;&#248;id</comment>
+            </column>
+        </property>
+        <property name="zcode" type="string">
+            <column name="ZCODE" length="40">
+                <comment>&#181;&#216;&#199;&#248;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="zname" type="string">
+            <column name="ZNAME" length="200">
+                <comment>&#181;&#216;&#199;&#248;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="uploadFlag" type="big_decimal">
+            <column name="UPLOAD_FLAG" precision="22" scale="0" not-null="true">
+                <comment>
+                &#201;&#207;&#180;&#171;&#177;&#234;&#214;&#190;[&#189;&#226;&#190;&#246;&#213;&#226;&#209;&#249;&#181;&#196;&#179;&#161;&#190;&#176;:&#181;&#177;&#191;&#198;&#196;&#191;&#210;&#187;&#205;&#234;&#179;&#201;&#202;&#177;&#163;&#172;&#209;&#167;&#207;&#176;&#191;&#198;&#196;&#191;&#182;&#254;&#181;&#196;&#202;&#177;&#186;&#242;&#163;&#172;&#188;&#180;&#178;&#250;&#201;&#250;&#193;&#203;&#191;&#198;&#196;&#191;&#182;&#254;&#181;&#196;&#209;&#167;&#202;&#177;&#211;&#214;&#178;&#250;&#201;&#250;&#193;&#203;&#191;&#198;&#196;&#191;&#210;&#187;&#181;&#196;&#209;&#167;&#202;&#177;&#213;&#226;&#184;&#246;&#202;&#177;&#186;&#242;&#191;&#198;&#196;&#191;&#210;&#187;&#181;&#196;&#209;&#167;&#202;&#177;&#178;&#187;&#189;&#248;&#208;&#208;&#201;&#207;&#180;&#171;&#163;&#172;&#181;&#177;&#199;&#176;&#177;&#234;&#214;&#190;&#206;&#170;&#214;&#181;&#206;&#170;1&#177;&#237;&#202;&#190;&#211;&#208;&#208;&#167;&#163;&#172;0&#206;&#170;&#206;&#222;&#208;&#167;]</comment>
+            </column>
+        </property>
+        <property name="photoIn" type="string">
+            <column name="PHOTO_IN" length="240">
+                <comment>&#199;&#169;&#181;&#189;&#213;&#213;&#198;&#172;</comment>
+            </column>
+        </property>
+        <property name="photoOut" type="string">
+            <column name="PHOTO_OUT" length="240">
+                <comment>&#199;&#169;&#205;&#203;&#213;&#213;&#198;&#172;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
